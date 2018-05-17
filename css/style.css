@@ -1,0 +1,111 @@
+body {
+	text-align: center;
+	background: black;
+	color: white;
+	margin: 0;
+}
+
+canvas {
+	display: block;
+	margin: -190px auto;
+}
+
+h1 {
+	margin: 10px 0 0;
+    font-size: 3em;
+}
+
+.score {
+	margin: 0;
+    font-size: 1.7em;
+}
+
+/*
+ * Styles for Characters
+ */
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 200px;
+}
+
+.left-chars {
+	float: left;
+}
+
+.right-chars {
+	float: right;
+	padding-right: 40px;
+}
+
+li img:hover {
+    background-image: url('../images/Selector.png');
+    background-size: cover;
+	cursor: pointer;
+}
+
+/*
+ * Styles for the Modals
+ */
+
+.gameover {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 20%;
+    height: 100px;
+    position: relative;
+    top: 200px;
+    transition: 1s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(178, 34, 34, 0.8); /*firebrick*/
+}
+
+.show {
+    visibility: visible !important;
+    opacity: 100 !important;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+    background-color: #146a82;
+    color: white;
+    padding: 0.4rem 0.7rem;
+    font-size: 1rem;
+}
+
+/*
+ * Styles for the footer
+ */
+
+#footer {
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    font-size: 30px;
+    color: gray;
+}
+
+.socialmedia-logo {
+    width: 30px;
+}
+
+.socialmedia-logo:hover {
+    width: 35px;
+    transition: 0.75s;
+}
+
+/*
+ * Media Queries
+ */
+
+@media screen and (min-width: 100px) {
+	img {
+		width: 170px;
+	}
+}
