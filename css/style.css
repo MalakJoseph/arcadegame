@@ -123,6 +123,10 @@ button {
 }
 
 @media screen and (min-width: 1010px) and (min-height: 600px) {
+	canvas {
+		padding-top: 70px;
+	}
+
 	#footer {
 		position: fixed;
 		top: 550px;
