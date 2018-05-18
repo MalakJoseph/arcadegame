@@ -3,6 +3,7 @@ body {
 	background: black;
 	color: white;
 	margin: 0;
+	min-width: 510px;
 }
 
 canvas {
@@ -28,23 +29,26 @@ li {
 	list-style: none;
 }
 
-img {
-	width: 200px;
-}
-
-.left-chars {
-	float: left;
-}
-
-.right-chars {
-	float: right;
-	padding-right: 40px;
+li img {
+	width: 150px;
 }
 
 li img:hover {
     background-image: url('../images/Selector.png');
     background-size: cover;
 	cursor: pointer;
+}
+
+.left-char {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+.right-char {
+	float: right;
+	padding: 0;
+	margin: 0;
 }
 
 /*
@@ -55,10 +59,10 @@ li img:hover {
     margin: 0 auto;
     padding: 20px;
     border-radius: 5px;
-    width: 20%;
+    width: 30%;
     height: 100px;
     position: relative;
-    top: 200px;
+    top: 350px;
     transition: 1s ease-in-out;
     visibility: hidden;
     opacity: 0;
@@ -84,9 +88,8 @@ button {
  */
 
 #footer {
-    position: fixed;
-    bottom: 20px;
-    right: 15px;
+    position: relative;
+	top: 470px;
     font-size: 30px;
     color: gray;
 }
@@ -104,8 +107,25 @@ button {
  * Media Queries
  */
 
-@media screen and (min-width: 100px) {
-	img {
-		width: 170px;
+@media screen and (max-width: 804px) {
+	#footer {
+		top: 520px;
+	}
+
+	.characters {
+		position: relative;
+		bottom: 100px;
+	}
+
+	canvas {
+		display: unset;
+	}
+}
+
+@media screen and (min-width: 1010px) and (min-height: 600px) {
+	#footer {
+		position: fixed;
+		top: 550px;
+		right: 10px;
 	}
 }
